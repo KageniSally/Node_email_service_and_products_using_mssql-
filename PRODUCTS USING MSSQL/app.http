@@ -1,0 +1,78 @@
+GET http://localhost:4000/categories
+
+####
+POST http://localhost:4000/categories
+Content-Type:application/json
+
+{
+    "name":"Category 3",
+    "description":"Electronics"
+}
+
+
+####
+GET http://localhost:4000/products
+
+
+
+####
+POST http://localhost:4000/products
+Content-Type: application/json
+
+{
+    "name":"Potatoes",
+    "description":"Nice Things",
+    "price":50,
+    "categoryId":"b2038efd-ed4a-4a06-9f3a-b20e52917492"
+}
+
+
+####
+PUT  http://localhost:4000/products/177ba9b8-4e66-4de1-92e3-dfcebc327ef5
+Content-Type: application/json
+
+{
+    "name":"Onions 1kg",
+    "description":"Affordable",
+    "price":55,
+    "categoryId":"b2038efd-ed4a-4a06-9f3a-b20e52917492"
+}
+
+####
+DELETE http://localhost:4000/products/177ba9b8-4e66-4de1-92e3-dfcebc327ef5
+
+
+
+####
+GET http://localhost:4000/products/aacc807f-cdf4-4c7e-993e-b56b391505f2
+
+
+####
+GET http://localhost:4000/products/category/b2038efd-ed4a-4a06-9f3a-b20e52917492
+
+####
+POST http://localhost:4000/users/register
+Content-Type: application/json
+
+{
+    "name":"Sally",
+    "email":"gitongasally4@gmail.com",
+    "password":"Qwerty204%"
+}
+
+
+
+
+####
+POST http://localhost:4000/users/login
+Content-Type: application/json
+
+{
+    "email":"gitongasally4@gmail.com",
+    "password":"Qwerty204%"
+}
+
+
+####
+GET http://localhost:4000/products
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MDBkNjA4YS1kN2M4LTRhYzAtYjg1MS03YzdhZWE0NGJkZTEiLCJuYW1lIjoic2FsbHkiLCJpYXQiOjE3MTgyODAyNzksImV4cCI6MTcxODI4NzQ3OX0.-FvYt4DAOVLAejDD1qgTmHJEXS3-DELoAfsy4366euw
